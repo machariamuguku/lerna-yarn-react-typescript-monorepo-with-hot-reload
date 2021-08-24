@@ -1,0 +1,12 @@
+// tsconfig.base.json
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+  },
+  "include": ["packages/"],
+  "exclude": ["**/node_modules", "**/dist"]
+}

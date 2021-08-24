@@ -1,0 +1,16 @@
+{
+  "name": "@root/package-a",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc --project tsconfig.build.json",
+    "build": "yarn run tsc && yarn run transpile && yarn run copy",
+    "transpile": "babel src -d dist --root-mode upward --extensions '.ts,.tsx' --ignore '**/*.test.ts,**/*.test.tsx,**/tests,**/__tests__'",
+    "copy": "copyfiles -u 1 \"./src/**/*.{css,html}\" \"./dist/\""
+  },
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@emotion/react": "^11.4.1"
+  }
+}

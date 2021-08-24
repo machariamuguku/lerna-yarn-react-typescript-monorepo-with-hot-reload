@@ -1,0 +1,17 @@
+// package-a/tsconfig.build.json
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist/types"
+  },
+  "include": ["src"],
+  "exclude": [
+    "**/node_modules",
+    "**/coverage",
+    "**/dist",
+    "**/*.spec.ts",
+    "**/*tests"
+  ]
+}
