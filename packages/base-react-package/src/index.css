@@ -1,0 +1,10 @@
+html,
+body,
+#app {
+  margin: 0;
+}
+body > #root > #app {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
